@@ -1,4 +1,5 @@
 """
+
 Agente de Estudio - Programa Principal
 Universidad Mariano Gálvez de Guatemala
 Autor: Celso Antonio Pérez Salguero

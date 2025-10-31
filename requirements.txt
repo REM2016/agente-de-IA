@@ -1,0 +1,12 @@
+spacy>=3.0
+textblob>=0.17.1
+# Nota: los modelos de spaCy se instalan por separado con:
+#   python -m spacy download es_core_news_md
+# o, si quieres el modelo pequeño:
+#   python -m spacy download es_core_news_sm
+pytest>=7.0
+
+# Nota: los modelos de spaCy se instalan por separado con:
+#   python -m spacy download es_core_news_md
+# o, si quieres el modelo pequeño:
+#   python -m spacy download es_core_news_sm

@@ -170,6 +170,204 @@
         "Divide tu estudio en bloques de 30 minutos",
         "Combina teoría con práctica ligera"
       ]
+    },
+    {
+      "fecha": "2025-10-20 21:28",
+      "estado_animo": "normal",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Haz un resumen de un tema",
+        "Practica con ejercicios básicos"
+      ]
+    },
+    {
+      "fecha": "2025-10-20 21:28",
+      "estado_animo": "normal",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Haz un resumen de un tema",
+        "Practica con ejercicios básicos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:32",
+      "estado_animo": "normal",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Lee un artículo corto",
+        "Revisa tus apuntes"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:32",
+      "estado_animo": "normal",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Lee un artículo corto",
+        "Revisa tus apuntes"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:35",
+      "estado_animo": "motivado",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Repasa un tema complejo durante 30 minutos",
+        "Haz 3 ejercicios de práctica"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:36",
+      "estado_animo": "motivado",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Estudia un tema nuevo durante 1 hora",
+        "Completa una tarea pendiente"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:36",
+      "estado_animo": "motivado",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Estudia un tema nuevo durante 1 hora",
+        "Completa una tarea pendiente"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:40",
+      "estado_animo": "cansado",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Alterna entre estudio y descansos",
+        "Haz ejercicios sencillos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:40",
+      "estado_animo": "motivado",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Prepara una presentación completa",
+        "Realiza un proyecto práctico"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 10:53",
+      "estado_animo": "cansado",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Alterna entre estudio y descansos",
+        "Haz ejercicios sencillos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:04",
+      "estado_animo": "normal",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Haz un resumen de un tema",
+        "Practica con ejercicios básicos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:04",
+      "estado_animo": "normal",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Haz un resumen de un tema",
+        "Practica con ejercicios básicos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:15",
+      "estado_animo": "cansado",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Toma un descanso de 15 minutos y luego repasa algo ligero",
+        "Escucha una clase grabada"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:15",
+      "estado_animo": "cansado",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Toma un descanso de 15 minutos y luego repasa algo ligero",
+        "Escucha una clase grabada"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:17",
+      "estado_animo": "normal",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Lee un artículo corto",
+        "Revisa tus apuntes"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:28",
+      "estado_animo": "motivado",
+      "tiempo": "poco",
+      "recomendaciones": [
+        "Repasa un tema complejo durante 30 minutos",
+        "Haz 3 ejercicios de práctica"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:28",
+      "estado_animo": "motivado",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Prepara una presentación completa",
+        "Realiza un proyecto práctico"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:29",
+      "estado_animo": "normal",
+      "tiempo": "medio",
+      "recomendaciones": [
+        "Haz un resumen de un tema",
+        "Practica con ejercicios básicos"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:29",
+      "estado_animo": "cansado",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Divide tu estudio en bloques de 30 minutos",
+        "Combina teoría con práctica ligera"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:32",
+      "estado_animo": "normal",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Estudia dos temas relacionados",
+        "Prepara un ensayo"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:33",
+      "estado_animo": "motivado",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Prepara una presentación completa",
+        "Realiza un proyecto práctico"
+      ]
+    },
+    {
+      "fecha": "2025-10-25 11:39",
+      "estado_animo": "motivado",
+      "tiempo": "mucho",
+      "recomendaciones": [
+        "Prepara una presentación completa",
+        "Realiza un proyecto práctico"
+      ]
     }
   ]
 }

@@ -2,8 +2,6 @@
 Clase principal del Agente de Estudio
 """
 from typing import List, Dict, Optional
-import json
-from pathlib import Path
 import random
 from config.constantes import RECOMENDACIONES, TIPS_MOTIVACIONALES
 

@@ -4,16 +4,29 @@ Configuraciones y constantes para el Agente de Estudio
 
 ESTADOS_ANIMO_KEYWORDS = {
     "motivado": [
+        # Estados positivos
         "motiva", "anima", "energia", "entusiasmo", "ganas", "alegr",
-        "positiv", "bien", "excelente", "dispuesto", "list"
+        "positiv", "bien", "excelente", "dispuesto", "list", "feliz",
+        "content", "activ", "inspira", "optimi", "empuje", "animo",
+        "fuerza", "poder", "capaz", "preparad", "listo", "energetic",
+        "dinamico", "vital", "despierto", "estimulado", "fuerte"
     ],
     "normal": [
+        # Estados neutrales
         "normal", "regular", "mas o menos", "neutral", "tranquil",
-        "ordinario", "comun", "usual", "tipico", "okay", "ok"
+        "ordinario", "comun", "usual", "tipico", "okay", "ok", 
+        "estandar", "promedio", "asi asi", "intermedio", "estable",
+        "moderado", "equilibrado", "balanceado", "ni bien ni mal",
+        "aceptable", "pasable", "natural"
     ],
     "cansado": [
+        # Estados negativos
         "cansa", "agota", "fatiga", "sueno", "dormir", "pesad",
-        "agobia", "exhaust", "mal", "desanima", "triste", "deprimi"
+        "agobia", "exhaust", "mal", "desanima", "triste", "deprimi",
+        "estres", "preocupa", "nervios", "ansie", "inquiet", "abruma",
+        "frustra", "irrita", "molest", "desespera", "angustia", "tedio",
+        "aburri", "desinteres", "perez", "floj", "desgan", "somnolien",
+        "adormil", "apatic", "desconcentra", "distra", "confundi"
     ]
 }
 

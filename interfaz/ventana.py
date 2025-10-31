@@ -2,10 +2,19 @@
 Interfaz gráfica del Agente de Estudio
 """
 import tkinter as tk
-from tkinter import scrolledtext, messagebox, ttk
+from tkinter import scrolledtext, ttk
 from datetime import datetime
 import json
 from pathlib import Path
+import os
+import sys
+
+# Asegurar que el directorio raíz del proyecto esté en sys.path cuando se ejecute
+# este archivo directamente. Esto evita ModuleNotFoundError al importar paquetes
+# como `modelos` o `utils` si se ejecuta `python interfaz/ventana.py` desde la carpeta
+# del propio módulo.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from modelos.agente import AgenteEstudio
 from utils.procesador_lenguaje import analizar_estado_animo, analizar_tiempo
 
@@ -136,20 +145,30 @@ class InterfazAgente:
 
     def _procesar_animo(self, texto: str):
         """Procesa la respuesta del estado de ánimo"""
-        estado_animo = analizar_estado_animo(texto)
+        from utils.procesador_lenguaje import obtener_descripcion_animo
+        estado_animo, descripcion, confianza = obtener_descripcion_animo(texto)
         
         if not estado_animo:
             self.mostrar_mensaje("Disculpa, no pude entender bien cómo te sientes. ¿Podrías decirlo de otra forma?")
+            self.mostrar_mensaje("Puedes decirme si te sientes motivado, normal, cansado, o describir tu estado en tus propias palabras.")
             return
 
         self.agente.estado_animo = estado_animo
         self.estado_conversacion = "esperar_tiempo"
         
-        respuestas = {
-            "motivado": "¡Me alegro que estés motivado! ",
-            "normal": "Entiendo que te sientas así. ",
-            "cansado": "Comprendo que estés cansado. "
-        }
+        # Si la confianza es alta (>0.6), dar una respuesta más específica
+        if confianza > 0.6:
+            respuestas = {
+                "motivado": "¡Excelente! Me alegra mucho ver que estás tan motivado. ",
+                "normal": "Entiendo, estás en un estado neutral y equilibrado. ",
+                "cansado": "Comprendo perfectamente que estés cansado, es normal sentirse así. "
+            }
+        else:
+            respuestas = {
+                "motivado": "¡Me alegro que tengas algo de motivación! ",
+                "normal": "Entiendo que te sientas así. ",
+                "cansado": "Comprendo que no estés en tu mejor momento. "
+            }
         
         self.mostrar_mensaje(f"{respuestas[estado_animo]}¿Cuánto tiempo tienes para estudiar?")
         
@@ -227,34 +246,7 @@ class InterfazAgente:
         self.botones_tiempo.pack_forget()
         self.botones_animo.pack(pady=5)
         
-        # Guardar en el historial
-        registro = {
-            "fecha": datetime.now().strftime("%Y-%m-%d %H:%M"),
-            "estado_animo": self.agente.estado_animo,
-                "tiempo": self.agente.tiempo_disponible,
-            "recomendaciones": recomendaciones
-        }
-        self.agente.agregar_al_historial(registro)
-        self._guardar_datos()
-        
-        # Mostrar recomendaciones
-        self.mostrar_mensaje("🎯 Basado en tu estado de ánimo y tiempo disponible, te recomiendo:")
-        
-        # Mostrar cada recomendación
-        todas_recomendaciones = recomendaciones + recomendaciones_tiempo
-        recomendaciones_texto = "\n".join(f"   {i}. {rec}" for i, rec in enumerate(todas_recomendaciones, 1))
-        self.mostrar_mensaje(recomendaciones_texto)
-        
-        # Mostrar un tip motivacional aleatorio
-        tip = self.agente.obtener_tip_aleatorio()
-        self.mostrar_mensaje(tip)
-        
-        self.estado_conversacion = "esperar_animo"
-        self.mostrar_mensaje("¿Cómo te sientes ahora?")
-        
-        # Mostrar/ocultar botones según el estado
-        self.botones_tiempo.pack_forget()
-        self.botones_animo.pack(pady=5)
+
 
     def _cargar_datos(self):
         """Carga los datos del agente desde archivos"""
